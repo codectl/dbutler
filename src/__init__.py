@@ -5,5 +5,6 @@ from src.cli import dbutler
 from src.db.postgres import postgres
 
 
-def init():
+def entrypoint():
+    """Package entrypoint."""
     dbutler()
