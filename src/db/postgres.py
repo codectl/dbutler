@@ -61,10 +61,10 @@ def exec_query(ctx, query=''):
     # instantiate a cursor object from the connection
     cursor = conn.cursor()
 
-    print(f"Executed query: {query}")
     # use the sql module to avoid SQL injection attacks
     cursor.execute(sql.SQL(query))
 
+    print(f"Executed query: {query}")
 
     cursor.close()
     conn.close()
